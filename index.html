@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather Snowglobe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>The Weather Snowglobe</h1>
+            <p>Search a city. Watch its weather.</p>
+        </header>
+
+        <form class="search" id="searchForm">
+            <input type="text" id="cityInput" placeholder="Enter a city" autocomplete="off" spellcheck="false">
+            <button type="submit" aria-label="Search">→</button>
+        </form>
+
+        <div class="snowglobe">
+            <div class="glass">
+                <div class="particles" id="particles"></div>
+                <div class="info">
+                    <div class="city" id="cityName">--</div>
+                    <div class="temp" id="temperature">--°</div>
+                    <div class="condition" id="condition">Awaiting a city</div>
+                </div>
+            </div>
+            <div class="base"></div>
+        </div>
+
+        <p class="status" id="status"></p>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
